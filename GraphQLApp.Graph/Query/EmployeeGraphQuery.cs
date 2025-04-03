@@ -24,11 +24,7 @@ namespace GraphQLApp.Graph.Query
                 resolve: context => repository.GetEmployeeById(context.GetArgument("id", int.MinValue))
             );
 
-            //Field<ListGraphType<EmployeeGraphType>>(
-            //    "employees",
-            //    "Return All Employees",
-            //    resolve: context => repository.GetEmployees()
-            //);
+            
 
             //Field<ListGraphType<EmployeeGraphType>>(
             //    "employees",
